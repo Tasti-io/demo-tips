@@ -1,0 +1,8 @@
+{
+  "name": "tasti-demo-tips",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Public demo: a week of tips pooled, checked and ready for payroll, with the working shown to every person.",
+  "scripts": { "dev": "node scripts/dev.mjs", "check": "node scripts/selftest.mjs" }
+}
