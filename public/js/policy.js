@@ -81,6 +81,7 @@ async function impact() {
       </table></div>
       ${w.movers.length > top.length ? `<div class="card-body lede" style="border-top:1px solid var(--rule)">and ${w.movers.length - top.length} more people move by smaller amounts.</div>` : ""}`
       : `<div class="card-body"><p class="lede">These are Harbour &amp; Co's current rules. Move anything on the left and every person whose share changes appears here, with the amount.</p></div>`}
+      ${w.totals.heldCents ? `<div class="card-body" style="border-top:1px solid var(--rule)"><p class="lede"><span class="warn">${money(w.totals.heldCents)} more is held</span> until the things on the <a href="/exceptions" style="color:var(--teal)">Decide</a> page are decided, so it is in neither column yet.</p></div>` : ""}
       <div class="card-body" style="border-top:1px solid var(--rule)"><p class="lede">The total never changes: every dollar of tips is paid to someone, or held where you can see it. Rules only move it between people.</p></div>
     </div>`;
 }
